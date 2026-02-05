@@ -1,0 +1,30 @@
+Agents
+
+1. Planner Agent
+
+    -> Takes user’s natural language task
+
+    -> Uses LLM to generate a JSON execution plan
+
+    -> Selects tools + parameters
+
+2. Executor Agent
+
+    -> Executes each step
+
+    -> Calls real APIs (GitHub + Weather)
+
+    -> Collects raw results
+3. Verifier Agent
+
+    -> Checks completeness & correctness
+
+    -> Fixes missing fields
+
+    -> Produces final structured output
+
+4. Tools (Real APIs)
+
+    -> GitHub API → repo search
+
+    -> OpenWeather API → weather data
